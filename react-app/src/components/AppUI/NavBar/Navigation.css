@@ -1,0 +1,166 @@
+.main-nav {
+	padding: 0;
+	background-color: var(--primaryColorDark);
+	display: grid;
+	grid-template-columns: 200px 1fr 200px;
+	/* height: 38px; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 98;
+}
+
+/* HOME BUTTON */
+.nav-logo {
+	width: 28px;
+	height: 28px;
+	margin-right: 15px;
+	border-radius: 5px;
+}
+
+.main-nav-home__div {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.main-nav-home {
+	display: block;
+	padding: 10px 17px;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+.fa-home {
+	color: #fff;
+}
+
+/* ABOUT */
+.main-nav__about {
+	color: #fff;
+	cursor: pointer;
+}
+
+/* SEARCH */
+.nav-search {
+	width: 40%;
+	position: relative;
+	display: flex;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-searchBar-form {
+	margin: 0px 5%;
+	width: 70%;
+	position: relative;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-searchBar {
+	width: 100%;
+	border-radius: 7px;
+	outline: none;
+	height: 24px;
+	border: 1px solid #cccccc;
+	padding: 0 0 0 10px;
+
+	font-size: 13px;
+}
+
+.nav-searchBar:focus + .search-container {
+	display: flex;
+}
+
+.search-container:hover {
+	display: flex;
+}
+
+.search-container {
+	position: absolute;
+	box-sizing: border-box;
+	top: 40px;
+	background-color: white;
+	width: 100%;
+	border-radius: 5px;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	color: black;
+	z-index: 99;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.searchAll__user-item,
+.searchAll__channel-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.searchAll_user-photo {
+	width: 28px;
+	height: 28px;
+	font-size: 100%;
+	margin-right: 5px;
+}
+
+.searchAll__channel-item:before {
+	content: '\1F3E0';
+}
+
+.searchAll__secondary-info {
+	margin: 0 0 0 10px;
+	font-size: 80%;
+	color: grey;
+}
+
+.user_ele,
+.channel_ele {
+	color: black;
+	display: flex;
+	align-items: center;
+	height: 30px;
+	padding: 5px;
+}
+
+.user_ele:hover,
+.channel_ele:hover {
+	background-color: rgba(173, 216, 230, 0.39);
+}
+.username_logo {
+	display: flex;
+	align-items: center;
+}
+
+.online_user::before {
+	content: '\1F436';
+}
+
+.channel_img::before {
+	content: '\1F3E0';
+}
+
+/* USER INFO */
+.username_logo {
+	justify-self: flex-end;
+}
+
+.username {
+	color: #fff;
+	margin-right: 13px;
+}
+
+.nav-logo:hover {
+	cursor: pointer;
+}
